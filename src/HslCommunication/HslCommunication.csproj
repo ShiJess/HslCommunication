@@ -1,0 +1,206 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>net45;net35</TargetFrameworks>
+    <!--netstandard2.0;-->
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Profinet\LSIS\LS_Bus.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Doc.txt" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Doc.txt" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="System.Management" />
+    <Reference Include="System.Windows.Forms" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="BasicFramework\FormAuthorAdvertisement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="BasicFramework\FormAuthorAdvertisement.designer.cs">
+      <DependentUpon>FormAuthorAdvertisement.cs</DependentUpon>
+    </Compile>
+    <Compile Update="BasicFramework\FormAuthorize.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="BasicFramework\FormAuthorize.designer.cs">
+      <DependentUpon>FormAuthorize.cs</DependentUpon>
+    </Compile>
+    <Compile Update="BasicFramework\FormPopup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="BasicFramework\FormPopup.designer.cs">
+      <DependentUpon>FormPopup.cs</DependentUpon>
+    </Compile>
+    <Compile Update="BasicFramework\FormPortraitSelect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="BasicFramework\FormPortraitSelect.Designer.cs">
+      <DependentUpon>FormPortraitSelect.cs</DependentUpon>
+    </Compile>
+    <Compile Update="BasicFramework\FormSupport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="BasicFramework\FormSupport.Designer.cs">
+      <DependentUpon>FormSupport.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Controls\UserBottle.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="Controls\UserBottle.Designer.cs">
+      <DependentUpon>UserBottle.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Controls\UserButton.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="Controls\UserButton.designer.cs">
+      <DependentUpon>UserButton.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Controls\UserClock.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="Controls\UserClock.designer.cs">
+      <DependentUpon>UserClock.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Controls\UserCurve.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="Controls\UserCurve.Designer.cs">
+      <DependentUpon>UserCurve.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Controls\UserDrum.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="Controls\UserDrum.Designer.cs">
+      <DependentUpon>UserDrum.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Controls\UserGaugeChart.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="Controls\UserGaugeChart.Designer.cs">
+      <DependentUpon>UserGaugeChart.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Controls\UserLantern.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="Controls\UserLantern.Designer.cs">
+      <DependentUpon>UserLantern.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Controls\UserPieChart.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="Controls\UserPieChart.Designer.cs">
+      <DependentUpon>UserPieChart.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Controls\UserPipe.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="Controls\UserPipe.Designer.cs">
+      <DependentUpon>UserPipe.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Controls\UserSwitch.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="Controls\UserSwitch.Designer.cs">
+      <DependentUpon>UserSwitch.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Controls\UserVerticalProgress.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="Controls\UserVerticalProgress.Designer.cs">
+      <DependentUpon>UserVerticalProgress.cs</DependentUpon>
+    </Compile>
+    <Compile Update="LogNet\View\FormLogNetView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="LogNet\View\FormLogNetView.Designer.cs">
+      <DependentUpon>FormLogNetView.cs</DependentUpon>
+    </Compile>
+    <Compile Update="LogNet\View\LogNetAnalysisControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="LogNet\View\LogNetAnalysisControl.Designer.cs">
+      <DependentUpon>LogNetAnalysisControl.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Properties\Resources.Designer.cs">
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="BasicFramework\FormAuthorAdvertisement.resx">
+      <DependentUpon>FormAuthorAdvertisement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="BasicFramework\FormAuthorize.resx">
+      <DependentUpon>FormAuthorize.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="BasicFramework\FormPopup.resx">
+      <DependentUpon>FormPopup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="BasicFramework\FormPortraitSelect.resx">
+      <DependentUpon>FormPortraitSelect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="BasicFramework\FormSupport.resx">
+      <DependentUpon>FormSupport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Controls\UserBottle.resx">
+      <DependentUpon>UserBottle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Controls\UserButton.resx">
+      <DependentUpon>UserButton.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Controls\UserClock.resx">
+      <DependentUpon>UserClock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Controls\UserCurve.resx">
+      <DependentUpon>UserCurve.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Controls\UserDrum.resx">
+      <DependentUpon>UserDrum.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Controls\UserGaugeChart.resx">
+      <DependentUpon>UserGaugeChart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Controls\UserLantern.resx">
+      <DependentUpon>UserLantern.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Controls\UserPieChart.resx">
+      <DependentUpon>UserPieChart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Controls\UserPipe.resx">
+      <DependentUpon>UserPipe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Controls\UserSwitch.resx">
+      <DependentUpon>UserSwitch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Controls\UserVerticalProgress.resx">
+      <DependentUpon>UserVerticalProgress.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="LogNet\View\FormLogNetView.resx">
+      <DependentUpon>FormLogNetView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="LogNet\View\LogNetAnalysisControl.resx">
+      <DependentUpon>LogNetAnalysisControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <Generator>ResXFileCodeGenerator</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+
+</Project>
