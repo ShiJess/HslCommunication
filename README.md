@@ -3,9 +3,14 @@
 
 ## RoadMap
 
+* 清理plc无关代码
+* 添加wcf&host，提供后台独立服务支持
+	* 原因：将plc通信从主程序中移出来，避免主程序GC时，阻塞plc监控类通信
+* 实现plc品牌官方库调用实现-接口封装
 
+----------------------------------------------------------------------------------------
 
-[中文](https://github.com/dathlin/HslCommunication/blob/master/docs/Chinese.md)
+[中文](docs/Chinese.md)
 <pre>
              ///\      ///\             /////////\              ///\
             //\\/      //\/           //\\\\\\\\//\            //\\/
@@ -75,52 +80,6 @@ Install-Package HslCommunication
 ## Environment
 
 * IDE: **Visual Studio 2019** 
-
-## Contact
-* Email: hsl200909@163.com
-* ![reward](https://raw.githubusercontent.com/dathlin/HslCommunication/master/imgs/support.png)
-
-## Supported Model and price [welcome to complete]
-#### Siemens
-No. | Class | Model | Price | Remarks | Contributor
--|-|-|-|-|-
-1 | ![pic](https://img.shields.io/badge/-SiemensS7Net-informational.svg) | ![pic](https://img.shields.io/badge/1215C-Good-success.svg) | ￥ | &nbsp; | [Richard Hu](https://github.com/dathlin/HslCommunication)
-
-#### Melsec
-No. | Class | Model | Price | Remarks | Contributor
--|-|-|-|-|-
-1 | ![pic](https://img.shields.io/badge/-MelsecMcNet-informational.svg) | ![pic](https://img.shields.io/badge/QJ71E71%20100-Good-success.svg) | ￥ | &nbsp; | [Richard Hu](https://github.com/dathlin/HslCommunication)
-2 | ![pic](https://img.shields.io/badge/-MelsecMcNet-informational.svg) | ![pic](https://img.shields.io/badge/Q02H-Good-success.svg) | ￥ | &nbsp; | [Richard Hu](https://github.com/dathlin/HslCommunication)
-3 | ![pic](https://img.shields.io/badge/-MelsecMcNet-informational.svg) | ![pic](https://img.shields.io/badge/L02H-Good-success.svg) | ￥ | &nbsp; | [Richard Hu](https://github.com/dathlin/HslCommunication)
-4 | ![pic](https://img.shields.io/badge/-MelsecMcNet-informational.svg) | ![pic](https://img.shields.io/badge/Fx5u-Good-success.svg) | ￥ | &nbsp; | [Richard Hu](https://github.com/dathlin/HslCommunication)
-
-#### AB plc
-No. | Class | Model | Price | Remarks | Contributor
--|-|-|-|-|-
-1 | ![pic](https://img.shields.io/badge/-AllenBradleyNet-informational.svg) | ![pic](https://img.shields.io/badge/1769-Good-success.svg) | ￥ | &nbsp; | &nbsp;
-1 | ![pic](https://img.shields.io/badge/-AllenBradleyNet-informational.svg) | ![pic](https://img.shields.io/badge/1756-Good-success.svg) | ￥ | &nbsp; | &nbsp;
-
-#### Omron
-No. | Class | Model | Price | Remarks | Contributor
--|-|-|-|-|-
-1 | ![pic](https://img.shields.io/badge/-OmronFinsNet-informational.svg) | - | ￥ | &nbsp;| &nbsp;
-
-#### Keyence
-No. | Class | Model | Price | Remarks | Contributor
--|-|-|-|-|-
-1 | ![pic](https://img.shields.io/badge/-OmronFinsNet-informational.svg) | - | ￥ | &nbsp;| &nbsp;
-
-#### ModbusTcp
-No. | Class | Model | Price | Remarks | Contributor
--|-|-|-|-|-
-1 | ![pic](https://img.shields.io/badge/-Modbus%20Tcp-informational.svg) | ![pic](https://img.shields.io/badge/1215C-Good-success.svg) | ￥ | &nbsp; | [Richard Hu](https://github.com/dathlin/HslCommunication)
-4 | ![pic](https://img.shields.io/badge/-Modbus%20Tcp-informational.svg) | ![pic](https://img.shields.io/badge/Fx5u-Good-success.svg) | ￥ | &nbsp; | [Richard Hu](https://github.com/dathlin/HslCommunication)
-
-#### Panasonic
-No. | Class | Model | Price | Remarks | Contributor
--|-|-|-|-|-
-1 | ![pic](https://img.shields.io/badge/-PanasonicMcNet-informational.svg) | ![pic](https://img.shields.io/badge/FP7%20CPS31E-Good-success.svg) | ￥ | &nbsp;| 镇江-Relax;
-
 
 ## HslCommunication.dll Summary 
 When I started working on this project, I had an idea of how to easily and quickly read and write PLC data. Our code logic should be very simple, 
